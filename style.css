@@ -1,0 +1,33 @@
+.cards-css{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-css{
+    width: 100%;
+    padding: 10px;
+    border: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        width: 60%;
+    }
+
+    .pgaps{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+
+        p{
+            width: 100%;
+        }
+    }
+}
+.image{
+    height: 200px;
+    width: 300px;
+}
+
