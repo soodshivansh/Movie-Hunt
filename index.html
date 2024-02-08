@@ -29,7 +29,7 @@
 
         <div class="mb-3 p-2">
             <label for="exampleFormControlInput1" class="form-label">Enter the name of movie you can think of</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="spidermon">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="eg. spidermon">
         </div>
         <button type="button" onclick="finddata()" class="btn btn-secondary">Find</button>
 
@@ -39,6 +39,7 @@
         
 
       </div>
+    
     
     <script>
 
@@ -52,7 +53,7 @@
             const encodedQuery = encodeURIComponent(valueishere);
 
             if(valueishere === ""){
-                data.innerHTML = "You gotta provide a parameter babe"
+                data.innerHTML = "You gotta provide a parameter"
             }
 
 
@@ -62,7 +63,7 @@
             const options = {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '1d593dd2cemsh23f3b6eae23e4e7p1a8f04jsn46cad824daaf',
+                    'X-RapidAPI-Key': `1d593dd2cemsh23f3b6eae23e4e7p1a8f04jsn46cad824daaf`,
                     'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
                 }
             };
